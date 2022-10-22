@@ -7,8 +7,8 @@ from django.http import HttpResponseRedirect, HttpResponse
 
 
 def home(request):
-    return HttpResponse(request, "index.html")
+    return render(request, "index.html")
 
 
 def contact(request):
-    return HttpResponse(request, "contact.html")
+    return render(request, "contact.html")
