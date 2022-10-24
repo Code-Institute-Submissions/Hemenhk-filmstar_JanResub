@@ -1,9 +1,14 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.http import HttpResponseRedirect, HttpResponse
+from django.views import generic, View
+from .models import Post
 
 
-#def base(request):
-#    return render(request, 'base.html')
+class Postpagination(generic.ListView):
+    model = Post
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'index.html'
+    paginate_by = 6
 
 
 def home(request):
