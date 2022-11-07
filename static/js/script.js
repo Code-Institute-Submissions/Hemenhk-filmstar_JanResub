@@ -7,5 +7,3 @@ function showMenu() {
 function hideMenu() {
     navLinks.style.right = "-200px";
 }
-
-console.log("Hello world!")
