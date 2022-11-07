@@ -8,7 +8,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 class Post(models.Model):
     title = models.CharField(max_length=300)
     slug = models.SlugField(max_length=400, unique=True, blank=False)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_post")
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     posted_image = CloudinaryField('image', default='placeholder')
