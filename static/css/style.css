@@ -5,23 +5,32 @@ body {
 
 /* Home page styles */
 
-#logo {
-    text-decoration: none;
-    font-size: 75%;
-}
-.wrapper {
-    padding: 7rem;
-    text-align: center;
-    background-color: rgb(211, 209, 209);
-}
-
-
-/* About page styles */
-
-.about-wrapper {
+.home-wrapper {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../media/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
     margin: 0 auto;
     text-align: center;
 }
+
+
+#logo {
+    text-decoration: none;
+}
+
+.hero-banner {
+    color: #fafafa;
+    padding: 7rem;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+
+/* About page styles */
 
 .about-wrapper {
         min-height: 80vh;
@@ -30,6 +39,8 @@ body {
         background-position: center;
         background-size: cover;
         position: relative;
+        margin: 0 auto;
+        text-align: center;
 }
 
 .about-container {
@@ -59,6 +70,7 @@ nav {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
 }
 
 nav h1 {
@@ -128,6 +140,17 @@ nav .fa-solid {
         transition: 1s;
     }
 
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .nav-links a {
+        color: #fff;
+        font-family: 'Squada One', sans-serif;
+        text-decoration: none;
+        font-size: 1.5rempx;
+    }   
+
     nav .fa-solid {
         display: block;
         color: #1c1b1b;
@@ -138,10 +161,6 @@ nav .fa-solid {
 
     nav .fa-xmark {
         color: #fff;
-    }
-
-    .nav-links ul {
-        padding: 30px;
     }
     
     html,
