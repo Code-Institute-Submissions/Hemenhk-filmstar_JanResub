@@ -3,8 +3,47 @@ body {
     background-color: #fafafa;
 }
 
+/* Home page styles */
+
 .wrapper {
     padding: 7rem;
     text-align: center;
     background-color: rgb(211, 209, 209);
+}
+
+
+/* About page styles */
+
+.about-wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-wrapper {
+        min-height: 80vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../media/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+}
+
+.about-container {
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.about-container h2 {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.about-container p {
+    font-size: 1rem;
+    padding-top: 1rem;
 }
