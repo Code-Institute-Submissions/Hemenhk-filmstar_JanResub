@@ -2,6 +2,12 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+"""
+Note that this code was used from Code Institute's "I Think Therefore I Blog"
+tutorial to help create this project.
+"""
+
+
 STATUS = ((0, "Draft"), (1, "Published"))
 
 

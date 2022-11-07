@@ -2,3 +2,9 @@
 body {
     background-color: #fafafa;
 }
+
+.wrapper {
+    padding: 7rem;
+    text-align: center;
+    background-color: rgb(211, 209, 209);
+}
