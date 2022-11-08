@@ -16,16 +16,39 @@ body {
     text-align: center;
 }
 
+/* Logo */
+
+.nav-logo {
+    text-decoration: none;
+}
 
 #logo {
-    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 250%;
+    letter-spacing: 4px;
+    color: #1c1b1b;
+}
+
+#logo::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1c1b1b;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#logo:hover::after {
+    width: 100%;
 }
 
 .hero-banner {
     color: #fafafa;
-    padding: 7rem;
+    padding: 6rem;
     text-align: center;
     background-color: transparent;
+    height: 30px;
 }
 
 
@@ -73,13 +96,6 @@ nav {
     height: 80px;
 }
 
-nav h1 {
-    font-family: 'Squada One', sans-serif;
-    font-size: 250%;
-    letter-spacing: 4px;
-    color: #1c1b1b;
-}
-
 .nav-links {
     flex: 1;
     text-align: right;
@@ -94,16 +110,16 @@ nav h1 {
 
 .nav-links a {
     color: #1c1b1b;
-    font-family: 'Squada One', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     text-decoration: none;
-    font-size: 1.5rempx;
+    font-size: 1.5rem;
 }
 
 .nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: #fff;
+    background: #1c1b1b;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -146,7 +162,7 @@ nav .fa-solid {
 
     .nav-links a {
         color: #fff;
-        font-family: 'Squada One', sans-serif;
+        font-family: 'Bebas Neue', cursive;
         text-decoration: none;
         font-size: 1.5rempx;
     }   
@@ -169,6 +185,6 @@ nav .fa-solid {
     }
 
     #logo {
-        font-size: 75%;
+        font-size: 200%;
     }
 }
