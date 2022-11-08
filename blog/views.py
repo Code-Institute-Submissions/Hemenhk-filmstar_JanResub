@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views import generic, View
 from .models import Post
+from .forms import ContactForm
 
 
 """
@@ -91,9 +92,25 @@ def home(request):
     return render(request, "index.html")
 
 
+"""
+Note that the Contact code was borrowed from twilio.com's tutorial
+"""
+
+
 def contact(request):
-    return render(request, "contact.html")
+    """ 
+    Display contact form and allow the user contact the admin
+    """
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'form_success.html')
+    form = ContactForm()
+    context = {'form': form}
+    return render(request, 'contact.html', context)
 
 
 def about(request):
     return render(request, "about.html")
+
