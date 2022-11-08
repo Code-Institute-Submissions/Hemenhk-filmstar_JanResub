@@ -179,6 +179,12 @@ nav .fa-solid {
         color: #fff;
     }
     
+    .hero-banner {
+        padding: 2rem 0 6rem 0;
+        text-align: center;
+        height: 30px;
+    }
+
     html,
     body {
         overflow-x: hidden;
