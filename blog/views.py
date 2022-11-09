@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views import generic, View
 from .models import Post
-from .forms import ContactForm
+from .forms import ContactForm, CommentForm
 
 
 """
@@ -11,9 +11,9 @@ project" tutorial to help create this project
 """
 
 
-class Postpagination(generic.ListView):
+class PostList(generic.ListView):
     """
-    View for the post detail
+    View for the post list
     """
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
@@ -22,11 +22,11 @@ class Postpagination(generic.ListView):
 
 
 class PostDetail(View):
-
+    """ A view for the post detail """
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(approved=True).order_by('created_on')
+        comments = post.comments.filter(approved=True).order_by("-created_on")
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -37,30 +37,29 @@ class PostDetail(View):
             {
                 "post": post,
                 "comments": comments,
-                "commented": False,
                 "liked": liked,
-                "comment": CommentForm()
-            }
+                "comment_form": CommentForm()
+            },
         )
 
     def post(self, request, slug, *args, **kwargs):
+
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(approved=True).order_by('created_on')
+        comments = post.comments.filter(approved=True).order_by("-created_on")
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
         comment_form = CommentForm(data=request.POST)
-
         if comment_form.is_valid():
             comment_form.instance.email = request.user.email
-            comment_form.instance.name = request.user.name
+            comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
         else:
-            comment_form = comment_form
+            comment_form = CommentForm()
 
         return render(
             request,
@@ -69,9 +68,9 @@ class PostDetail(View):
                 "post": post,
                 "comments": comments,
                 "commented": True,
-                "liked": liked,
-                "comment": CommentForm()
-            }
+                "comment_form": comment_form,
+                "liked": liked
+            },
         )
 
 
@@ -113,26 +112,3 @@ def contact(request):
 
 def about(request):
     return render(request, "about.html")
-
-
-class PostDetail(View):
-    """
-    View for post details
-    """
-    def get(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(approved=True).order_by('created_on')
-        liked = False
-        if post.likes.filter(id=self.request.user.id).exists():
-            liked = True
-
-        return render(
-            request,
-            "post_detail.html",
-            {
-                "post": post,
-                "comments": comments,
-                "liked": liked
-            }
-        )
