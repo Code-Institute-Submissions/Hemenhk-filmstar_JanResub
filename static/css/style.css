@@ -167,6 +167,14 @@ nav .fa-solid {
     display: none;
 }
 
+/* Sign up button */
+
+.btn-signup {
+    background-color: #1c1b1b;
+    color: #fafafa;
+    border-radius: 5px;
+}
+
 
 @media screen and (max-width: 770px) {
     .cover-box h1 {
