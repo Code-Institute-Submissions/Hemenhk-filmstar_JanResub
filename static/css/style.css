@@ -170,12 +170,13 @@ nav .fa-solid {
 
 .account-container {
     min-height: 80vh;
+    width: 80%;
     position: relative;
     display: inline-block;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    left: 40%;
+    left: 30%;
 }
 
 /* Sign up, Log in and Logout buttons */
@@ -236,6 +237,18 @@ nav .fa-solid {
         padding: 2rem 0 6rem 0;
         text-align: center;
         height: 30px;
+    }
+
+    /* Account container */
+
+    .account-container {
+        min-height: 80vh;
+        width: 80%;
+        position: relative;
+        display: inline-block;
+        justify-content: left;
+        align-items: left;
+        left: 10%;
     }
 
     html,
