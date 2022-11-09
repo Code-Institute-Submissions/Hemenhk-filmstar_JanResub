@@ -1,6 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 {% load crispy_forms_tags %}
+
 <!-- Note that the code was used from Code Institute's "I think therefore I blog" tutorial to help create this project-->
 
 <div class="masthead">
@@ -13,7 +14,7 @@
                 <p class="post-subtitle">{{ post.author}}| {{ post.created_on}} </p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                {% if "placeholder" in post.featured_image.url %}
+                {% if "placeholder" in post.posted_image.url %}
                 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
                 {% else %}
                 <img src="{{ post.featured_image.url }}" width="100%">
