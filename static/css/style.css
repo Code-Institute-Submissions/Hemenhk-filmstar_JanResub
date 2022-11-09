@@ -1,4 +1,3 @@
-
 body {
     background-color: #fafafa;
 }
@@ -56,14 +55,14 @@ body {
 /* About page styles */
 
 .about-wrapper {
-        min-height: 80vh;
-        width: 100%;
-        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../media/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg');
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        margin: 0 auto;
-        text-align: center;
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../media/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .about-container {
@@ -167,6 +166,18 @@ nav .fa-solid {
     display: none;
 }
 
+/* Account container */
+
+.account-container {
+    min-height: 80vh;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    left: 40%;
+}
+
 /* Sign up, Log in and Logout buttons */
 
 .btn-signup {
@@ -207,7 +218,7 @@ nav .fa-solid {
         font-family: 'Bebas Neue', cursive;
         text-decoration: none;
         font-size: 1.5rempx;
-    }   
+    }
 
     nav .fa-solid {
         display: block;
@@ -220,7 +231,7 @@ nav .fa-solid {
     nav .fa-xmark {
         color: #fff;
     }
-    
+
     .hero-banner {
         padding: 2rem 0 6rem 0;
         text-align: center;
