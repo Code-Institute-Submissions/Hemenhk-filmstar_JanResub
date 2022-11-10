@@ -175,7 +175,6 @@ nav .fa-solid {
     display: block;
     justify-content: center;
     align-items: center;
-    left: 30%;
 }
 
 /* Sign up, Log in and Logout buttons */
@@ -258,6 +257,8 @@ nav .fa-solid {
 
 .post-link:hover,
 .page-link {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
     color: #e04c4c;
     border-radius: 8px;
 }
