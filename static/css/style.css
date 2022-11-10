@@ -32,7 +32,7 @@ body {
     content: '';
     width: 0%;
     height: 2px;
-    background: #1c1b1b;
+    background: #e04c4c;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -152,7 +152,7 @@ nav {
     content: '';
     width: 0%;
     height: 2px;
-    background: #1c1b1b;
+    background: #e04c4c;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -248,15 +248,17 @@ nav .fa-solid {
 }
 
 .post-link {
+    position: relative;
     text-decoration: none;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.5px;
+    top: 10px;
     color: #fafafa;
 }
 
 .post-link:hover,
 .page-link {
-    color: #1c1b1b;
+    color: #e04c4c;
     border-radius: 8px;
 }
 
