@@ -1,9 +1,13 @@
-const navLinks = document.getElementById("navLinks")
+const navLinks = document.getElementById('navLinks');
+const message = document.getElementById('msg');
 
-function showMenu() {
-    navLinks.style.right = "0";
+
+// Function showing navbar menu for smaller screens 
+const showMenu = () => {
+    navLinks.style.right = '0';
 }
 
-function hideMenu() {
-    navLinks.style.right = "-200px";
+// Function closing navbar menu for smaller screens 
+const hideMenu = () => {
+    navLinks.style.right = '-200px';
 }
