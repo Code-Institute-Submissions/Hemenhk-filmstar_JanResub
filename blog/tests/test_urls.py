@@ -21,6 +21,10 @@ class TestUrls(SimpleTestCase):
         url = reverse('post_like', args=['test-slug'])
         self.assertEquals(resolve(url).func.view_class, PostLike)
 
-    def test_post_contact_is_resolved(self):
+    def test_contact_url_is_resolved(self):
         url = reverse('contact')
         self.assertEquals(resolve(url).func, contact)
+
+    def test_about_url_is_resolved(self):
+        url = reverse('about')
+        self.assertEquals(resolve(url).func, about)
