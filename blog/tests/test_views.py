@@ -16,3 +16,8 @@ class TestViews(TestCase):
         response = self.client.get(self.home_url)
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
+
+    def test_get_contact_page_GET(self):
+        response = self.client.get(self.contact_url)
+        self.assertEquals(response.status_code, 200)
+        self.assertTemplateUsed(response, 'contact.html')
