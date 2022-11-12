@@ -23,6 +23,7 @@ body {
 
 #logo {
     font-family: 'Bebas Neue', cursive;
+    padding-top: 10px;
     font-size: 250%;
     letter-spacing: 4px;
     color: #1c1b1b;
@@ -132,6 +133,8 @@ nav {
 .nav-links {
     flex: 1;
     text-align: right;
+    padding-top: 22px;
+    letter-spacing: 0.5px;
 }
 
 .nav-links ul li {
@@ -277,6 +280,26 @@ nav .fa-solid {
     color: #fafafa;
 }
 
+/* Footer */
+
+.footer {
+    height: 150px;
+}
+
+.social-links > li {
+    display: inline;
+    padding-left: 40px;
+    font-size: 200%;
+}
+
+.social-links i {
+    padding-top: 50px;
+    color: #1c1b1b;
+}
+
+.social-links i:hover {
+    color: #e04c4c;
+}
 
 @media screen and (max-width: 770px) {
 

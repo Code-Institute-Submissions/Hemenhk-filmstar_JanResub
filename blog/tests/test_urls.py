@@ -3,7 +3,8 @@ from django.urls import reverse, resolve
 from blog.views import PostList, PostLike, PostDetail, contact, about
 
 """
-This code was inspired by The Dumbfounds. Specific link can be found in the readme.
+This code was inspired by The Dumbfounds.
+Specific link can be found in the readme.
 """
 
 
