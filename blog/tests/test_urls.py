@@ -16,3 +16,7 @@ class TestUrls(SimpleTestCase):
     def test_post_detail_url_is_resolved(self):
         url = reverse('post_detail', args=['test-slug'])
         self.assertEquals(resolve(url).func.view_class, PostDetail)
+
+    def test_post_like_url_is_resolved(self):
+        url = reverse('post_like', args=['test-slug'])
+        self.assertEquals(resolve(url).func.view_class, PostLike)
