@@ -1,5 +1,6 @@
 body {
     background-color: #fafafa;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 /* Home page styles */
@@ -188,13 +189,36 @@ nav .fa-solid {
     align-items: center;
 }
 
-/* Sign up, Log in and Logout buttons */
+/* Buttons  */
 
 .btn-signup {
     background-color: #1c1b1b;
     color: #fafafa;
     border-radius: 5px;
 }
+
+.btn-like {
+    color: #e04c4c;
+    border: none;
+    background: transparent;
+}
+
+.contact-btn {
+    margin-top: 5px;
+    background-color: #1c1b1b;
+    color: #fafafa;
+    border: none;
+}
+
+.contact-btn:hover {
+    background-color: #e04c4c;
+    color: #fafafa;
+}
+
+.comment-btn {
+    margin-top: 5px;
+}
+
 
 /* Home page cards */
 
@@ -205,7 +229,7 @@ nav .fa-solid {
 
 .image-container {
     position: relative;
-    
+
 }
 
 .image-flash {
@@ -295,7 +319,7 @@ nav .fa-solid {
     height: 150px;
 }
 
-.social-links > li {
+.social-links>li {
     display: inline;
     padding-left: 40px;
     font-size: 200%;
