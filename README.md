@@ -42,3 +42,20 @@ The target audience for this website is anyone that is interested in cinema. Thi
   * __Site Owner Goals:__
 
   * As a site admin I can create, read, update or delete posts so that easily manage my blog
+
+
+  ## Scope
+
+To achieve the strategy goals laid out, I have taken the following steps:
+
+* A navigation bar at the top of the screen, which was custom-made, to allow the user to navigate through the website with ease.
+* A Home page, that allowed the user to view which reviews are available.
+* An About us page, which gives the user information regarding the website's purpose.
+* A Contact page, which allows the user to contact the admin.
+* A Login page, which gives the user access to their account.
+* A Sign Up page, which allows the user to create an account.
+* A Log Out page, so that the user can log out of their accont when they're done using it.
+* A Post Detail page, to post detailed information regarding the reviews.
+* A Footer at the bottom of the screen, with social media links and copyright text.
+* A responsive website, which works on all screen sizes, without sacrificing user experience.
+* A CRUD functional admin page, to allow the admin to create, read, update and delete posts.
