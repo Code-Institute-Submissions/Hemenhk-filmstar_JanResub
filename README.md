@@ -59,3 +59,20 @@ To achieve the strategy goals laid out, I have taken the following steps:
 * A Footer at the bottom of the screen, with social media links and copyright text.
 * A responsive website, which works on all screen sizes, without sacrificing user experience.
 * A CRUD functional admin page, to allow the admin to create, read, update and delete posts.
+
+
+## Design 
+
+### Colors 
+
+For the main body I chose to use #FAFAFA as a standard background color. It was specifically chosen as #FFF is too bright. #1C1B1B was used for the background color of the header and footer, as #000 is too strong. By using these contrasting colors, the user can clearly distinguish between the body and the header/footer, for easier usage. 
+
+### Typography 
+
+The fonts were sourced from [Google Fonts](https://fonts.google.com/).
+
+For the logo, navigation links and the headers I chose to use Bebas Neue.
+
+For the main body text I used Noto Sans.
+
+I chose to not use extravagent fonts, as it wouldn't suit the purpose of the website. 
