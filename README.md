@@ -176,6 +176,120 @@ Due to time constraints a few features where not able to be created for this web
     * Am I Responsive was used for showcasing the website at the top of this readme document.
 
 
+## Testing 
+
+Most of the tests done in this project where done manually.
 
 
+### User Stories Testing
+
+From the home page, the user is presented with various different navigation links. These are the Logo, Home button, Contact button, About Us button, Login button, Sign up button and Logout button. Each of these links has the following effect once clicked: 
+
+* Logo --> will take the user to the home page.
+* Home --> will take the user to the home page.
+* Conact  --> will take the user to the contact page.
+* About Us --> will take the user to the about us page.
+* Logout --> will take the user to the log out page.
+* Login --> will take the user to the log in page.
+* Sign Up --> will take the user to the sign up page.
+
+
+The navigation links can be easily accessed at the top of the page. When on smaller screens, they can be accessed by clicking on the hamburger menu, whereby a side menu will appear will all navigation links present on the right-hand side. 
+
+![](static/media/home-page.png)
+
+The main section of the home page displays the posted reviews, paginated by a number of six on each page, as seen above. The user can navigate the reviews by clicking on the "next/previous" button, as seen below. Each post has an image, the author's name and the date of its post. 
+
+![](static/media/second-home-page.png)
+
+At the bottom of all pages is the footer. Here are the links to different social media urls. Each is functional and has a hover effect, that turns the links red. There is also copyright information present here as well.
+
+![](static/media/footer.png)
+
+The user stories achieved on the home page are:
+
+* As a a user I can use navigation tabs so that I can easily navigate through the app
+* As a user I can click on social media links so that I can follow the admin on other social media platforms
+* As a user I can go to the home and about pages so that I can use the app and understand its purpose
+* As a user I can view a paginated list of posts so that easily find what I wish to take part of
+* As a user I can open a post so that take part of the information posted
+
+The contact page offers the user a way to contact the admin by filling out a form, as seen below. Due to the sharp brightness when taking the screenshot, the fields are not fully visible in the images.
+
+![](static/media/contact-page.png)
+![](static/media/contacting.png)
+
+Once the form is completed the user will be redirected to another page, where a message appears, stating that the message has been successfully sent to the admin.
+
+![](static/media/contact-successful.png)
+
+The user stories achieved on the home page is:
+
+* As a user I can go the contact page so that I can contact the site's admin for any questions I have
+
+
+The about page displays the purpose of this website to the user.
+
+![](static/media/about-us.png)
+
+The user stories achieved on the home page is:
+
+* As a user I can go to the home and about pages so that I can use the app and understand its purpose.
+
+
+When clicking the sign up button, the user is taken to a page where they can register an account, of which they can interact with the posts. 
+
+![](static/media/sign-up.png)
+
+The user stories achieved on the home page is:
+
+* As a user I can create an account so that I can take part of the posts
+
+If the user already has an account they can log in using the login link in the header. When logged in, an alert message appears informing the user that they have successfully logged in. When logged in the sign up link disappears. 
+
+![](static/media/login-page.png)
+
+If the user already has an account they can log out using the logoyt link in the header. When logged out, an alert message appears informing the user that they have successfully logged out of their account. When logged out the sign up and login links appear. 
+
+![](static/media/sign-out.png)
+
+Users with an account have the ability to like/unlike and comment on posts.
+
+![](static/media/comments.png)
+
+The post detail will be the same for user with accounts as for users without. The only difference being the ability to comment and like on the posts. 
+
+![](static/media/post-detail.png)
+
+The user stories achieved on the post detail page are:
+
+* As a user I can view comments so that I will know what people have to say about my post.
+* As a user I can view likes so that I can see how people think about my post
+* As a user I can like or unlike a post so that share my opinion on the post
+* As a user I can comment on a post so that share my thoughts
+
+
+__User Stories Exclusive To Admin - Testing__
+
+The admin section is accessed by typing "/admin" at the end of home url for the website.
+
+![](static/media/admin-login.png)
+
+The admin site has various functionalities such as:
+
+* Managing posts
+* Managing comments
+* Deleting users
+
+(Due to the screenshot, the image is much brighter than in reality.)
+
+![](static/media/admin-panel.png)
+
+The admin has the option of creating, updating and deleting posts. Each post has a title, slug, main body of text and an image. The admin can choose whether to publish the post or to keep it as a draft for further embellishments.
+
+![](static/media/admin-post.png)
+
+The user stories achieved on the admin panel is:
+
+* As a site admin I can create, read, update or delete posts so that easily manage my blog
 
