@@ -4,9 +4,13 @@
 <html lang="en">
 
 <head>
-
     <!-- Meta Tags-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Film Star is a blog that reviews different films and shows!">
+    <meta name="keywords" content="Film Star, blog, review, films, movies, TV-shows">
+    <meta name="author" content="Hemen Hiwa Kamal">
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon.ico' %}">
     <!-- Style sheets -->
@@ -22,14 +26,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
-
     <!-- Note that code was used from Code Institute's 'I think Therefore I blog project' -->
-
-    <section class="nav-header">
+    <header class="nav-header">
         <nav>
             <a class="nav-logo" href="{% url 'home' %}">
                 <h1 id="logo">Film Star</h1>
@@ -57,7 +58,7 @@
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-    </section>
+    </header>
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -70,13 +71,11 @@
             </div>
         </div>
     </div>
-
     <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
-
     <!-- Footer -->
     <footer class="footer mt-auto py-3" id="footer">
         <ul class="social-links p-0 text-center">
@@ -102,7 +101,6 @@
             <p class="m-0 text-center text-black">&copy; Copyright Film Star 2022</p>
         </div>
     </footer>
-
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/958d0d4858.js" crossorigin="anonymous"></script>
 
@@ -118,7 +116,6 @@
     </script>
     <!-- Custom JS -->
     <script src="{% static 'js/script.js' %}"></script>
-    <!-- Function closing alert messages -->
 </body>
 
 </html>
