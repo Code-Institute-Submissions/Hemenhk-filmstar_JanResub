@@ -132,3 +132,50 @@ Due to time constraints a few features where not able to be created for this web
 
 * A search bar in the header, so that the user can easily look up any post they wish to view.
 
+## Technologies Used
+
+* [Django](https://docs.djangoproject.com/en/3.1/): 
+    * Django the main framework used in the making of this project.
+* [Bootstrap](https://getbootstrap.com/): 
+    * Bootstrap was used for the responsiveness of the website, with exception of the header. 
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML):
+    * HTML was used as the basic structure for building this project, mainly through a base file, which was then extended to all other html files. 
+* [CSS3](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics):
+    * CSS was used to give this project styles and a way to give the visitor a good user experience.
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide):
+    * Javascript was used to write interactive functions for this website, such as the navigation menu on smaller screens.
+* [Python](https://www.python.org/): 
+    * Different python modules were used to build this website.
+* [Gitpod](https://www.gitpod.io/): 
+    * Gitpod was used to write the code and style the project.
+* [Github](https://github.com/): 
+    * Github was used to store the project after it had been pushed.
+* [Git](https://git-scm.com/):
+    * Git was used for version control by commiting to Git and pushing to Github.
+* [Heroku](https://herokuapp.com/):
+    * Heroku was used to deploy this project.
+* [Google](https://www.google.se/):
+    * Google was used to download and display images on the posts.
+* [Google Fonts](https://getbootstrap.com/): 
+    * Google fonts was used to source the fonts of this project.
+* [Font Awesome](https://fontawesome.com/): 
+    * Font Awesome was used to apply icons in this project.
+* [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools): 
+    * Google Developer Tools was used to identify bugs, and to test performance of the website.
+* [W3C Markup Validation Service](https://validator.w3.org/): 
+    * W3C was used to validate all the HTML code written in this project.
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/): 
+    * W3C CSS validation was used to validate the CSS written in this project.
+* [JSHint Validation Service](https://jshint.com/): 
+    * The JSHint Validation Service was used to validate the JavaScript codes used on this project.
+* [PEP8 Online Validation Service](http://pep8online.com/): 
+    * PEP8 was used to validate the python code for this project, by finding any erros and or bugs, which could then be adressed
+* [Cloudinary](https://cloudinary.com/): 
+    * Cloudinary was used to store the media and static files of this project.
+* [Am I Responsive](http://ami.responsivedesign.is/):
+    * Am I Responsive was used for showcasing the website at the top of this readme document.
+
+
+
+
+
