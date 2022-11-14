@@ -90,3 +90,45 @@ The database contains four models, of which one is a custom model
 * __Comment__: This model contains information regarding the comments written by the site user
 * __User__: This model contains information regarding the user. It is a built-in model of Django.
 * __Contact__: Contains information regarding the contact form submitted by the user. 
+
+
+## Features
+
+### Current Features 
+
+For this project I chose to create a website with different pages, accessed by the navigation links in the header. Thisis fully responsive for desktops, tablets and phones. When reaching a phone screen, the navigation links turn into a hamburger menu, which is accessed on the right side of the screen, as I considered it to be more user friendly than the left side. 
+
+The website also has a few different interactive features for the user, such as liking, commenting, contacting the admin, signing up, signing in and signin out. 
+
+__Navigation__:
+
+* The navigation feature is present on all pages of this website, and is fixed to the top of the screen. 
+* The logo is on the left-hand side, whilst the links are on the right. All links and the logo have a hover effect, whereby a line expands below the links, indicating where the mouse is hovered. This gives the website a much better aesthetic.
+
+__Footer__:
+
+* The footer is present on all pages of this website, and is fixed to the bottom. It has the same background color as the header, and  contains the social media links and copyright information.
+* The social media links have a hover effect, whereby they turn red, indicating where the mouse is hovered. 
+
+
+__Contact__:
+
+* The contact page is accessed through the navigation menu. 
+* The user can send in any message they wish. A field requiring their email is present, so that the admin can respond to the user's message.
+
+
+__Features Exclusive to the Admin__:
+
+* The Admin is the only one capable of approving and deleting comments sumbitted by users.
+* The Admin is the only one capable of creating, updating and deleting posts.
+
+### Future Features
+
+Due to time constraints a few features where not able to be created for this website, and can be implemented in the future.
+
+* A feature that allows the user to create their own review posts, much like on Rotten Tomatoes or Imdb.
+
+* A feature that allows the user to edit and/or delete their own posted comments on the posts. 
+
+* A search bar in the header, so that the user can easily look up any post they wish to view.
+
