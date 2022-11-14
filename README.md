@@ -76,3 +76,17 @@ For the logo, navigation links and the headers I chose to use Bebas Neue.
 For the main body text I used Noto Sans.
 
 I chose to not use extravagent fonts, as it wouldn't suit the purpose of the website. 
+
+
+## Skeleton
+
+### Database
+
+During the production of this website SQLite/Postgres was used as a main database. When the website was deployed, Heroku Postgres was used instead. 
+
+The database contains four models, of which one is a custom model
+
+* __Post__: This model contains information regarding the posts created by the admin.
+* __Comment__: This model contains information regarding the comments written by the site user
+* __User__: This model contains information regarding the user. It is a built-in model of Django.
+* __Contact__: Contains information regarding the contact form submitted by the user. 
