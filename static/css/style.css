@@ -110,6 +110,11 @@ nav .fa-solid {
     display: none;
 }
 
+    
+.fa-bars {
+    color: #fafafa;
+}
+
 /* Home page cards */
 
 .card {
@@ -406,7 +411,7 @@ nav .fa-solid {
 
     nav .fa-solid {
         display: block;
-        color: #1c1b1b;
+        color: #fafafa;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
