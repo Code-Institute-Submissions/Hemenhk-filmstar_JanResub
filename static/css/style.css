@@ -3,6 +3,14 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+h1, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.links {
+    color: #e04c4c;
+}
+
 /* Home page styles */
 
 .home-wrapper {
@@ -16,13 +24,16 @@ body {
     text-align: center;
 }
 
-h1, h3 {
-    font-family: 'Bebas Neue', sans-serif;
+/* Hero Banner */
+
+.hero-banner {
+    color: #fafafa;
+    padding: 6rem;
+    text-align: center;
+    background-color: transparent;
+    height: 30px;
 }
 
-.links {
-    color: #e04c4c;
-}
 /* Logo */
 
 .nav-logo {
@@ -51,92 +62,7 @@ h1, h3 {
     width: 100%;
 }
 
-.hero-banner {
-    color: #fafafa;
-    padding: 6rem;
-    text-align: center;
-    background-color: transparent;
-    height: 30px;
-}
-
-/* Messages */
-
-.success {
-    background-color: #e04c4c;
-    color: #fafafa;
-    font-family: 'Bebas Neue', sans-serif;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-/* About page styles */
-
-.about-wrapper {
-    min-height: 80vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../media/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg');
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about-container {
-    width: 80%;
-    color: #fff;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    text-align: center;
-    flex-direction: column;
-}
-
-.about-container h2 {
-    font-size: 3rem;
-    padding: 1rem;
-}
-
-.about-container p {
-    font-size: 1rem;
-    padding-top: 1rem;
-}
-
-/* Contact page*/
-
-.contact-form {
-    color: #1c1b1b;
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
-    padding: 2rem;
-    text-decoration: underline;
-}
-
-/* Contact success page */
-
-.form-success {
-    min-height: 80vh;
-    padding: 5rem;
-    background-color: #1c1b1b;
-}
-
-.form-success h1 {
-    color: #fafafa;
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 3rem;
-    padding: 4rem;
-    text-decoration: underline;
-}
-
-.form-success p {
-    color: #fafafa;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 2rem;
-}
-
-/* navbar */
+/* Navbar */
 
 nav {
     display: flex;
@@ -184,70 +110,6 @@ nav {
 nav .fa-solid {
     display: none;
 }
-
-/* Account container */
-
-.account-container {
-    min-height: 80vh;
-    width: 80%;
-    position: relative;
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
-
-#contact-page {
-    text-align: center;
-    margin: 0 auto;
-    min-height: 70vh;
-    padding-top: 25px;
-}
-
-#sign-up, #log-out, #log-in {
-    background-color: #1c1b1b;
-    color: #fff;
-    border-radius: 15px;
-    width: 800px;
-    max-width: 80%;
-    padding: 25px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    min-height: 50vh;
-}
-
-
-
-/* Buttons  */
-
-.btn-signup {
-    background-color: #e04c4c;
-    color: #fafafa;
-    border-radius: 5px;
-    border: none;
-}
-
-.btn-like {
-    color: #e04c4c;
-    border: none;
-    background: transparent;
-}
-
-.contact-btn {
-    margin-top: 5px;
-    background-color: #1c1b1b;
-    color: #fafafa;
-    border: none;
-}
-
-.contact-btn:hover {
-    background-color: #e04c4c;
-    color: #fafafa;
-}
-
-.comment-btn {
-    margin-top: 5px;
-}
-
 
 /* Home page cards */
 
@@ -344,6 +206,144 @@ nav .fa-solid {
 .post-subtitle {
     margin-left: 5%;
     color: #fafafa;
+}
+
+/* Alert messages */
+
+.success {
+    background-color: #e04c4c;
+    color: #fafafa;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* About page styles */
+
+.about-wrapper {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../media/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-container {
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.about-container h2 {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.about-container p {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+/* Contact page */
+
+.contact-form {
+    color: #1c1b1b;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    padding: 2rem;
+    text-decoration: underline;
+}
+
+/* Contact success page */
+
+.form-success {
+    min-height: 80vh;
+    padding: 5rem;
+    background-color: #1c1b1b;
+}
+
+.form-success h1 {
+    color: #fafafa;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    padding: 4rem;
+    text-decoration: underline;
+}
+
+.form-success p {
+    color: #fafafa;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+/* Account container */
+
+.account-container {
+    min-height: 80vh;
+    width: 80%;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-page {
+    text-align: center;
+    margin: 0 auto;
+    min-height: 70vh;
+    padding-top: 25px;
+}
+
+#sign-up, #log-out, #log-in {
+    background-color: #1c1b1b;
+    color: #fff;
+    border-radius: 15px;
+    width: 800px;
+    max-width: 80%;
+    padding: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    min-height: 50vh;
+}
+
+/* Buttons  */
+
+.btn-signup {
+    background-color: #e04c4c;
+    color: #fafafa;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-like {
+    color: #e04c4c;
+    border: none;
+    background: transparent;
+}
+
+.contact-btn {
+    margin-top: 5px;
+    background-color: #1c1b1b;
+    color: #fafafa;
+    border: none;
+}
+
+.contact-btn:hover {
+    background-color: #e04c4c;
+    color: #fafafa;
+}
+
+.comment-btn {
+    margin-top: 5px;
 }
 
 /* Footer */
