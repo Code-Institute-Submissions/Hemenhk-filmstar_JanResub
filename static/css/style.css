@@ -131,7 +131,7 @@ nav .fa-solid {
 }
 
 .author {
-    color: white;
+    color: #1c1b1b;
     font-family: 'Bebas Neue';
     letter-spacing: 0.5px;
     margin: 4px;
@@ -182,7 +182,7 @@ nav .fa-solid {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.5px;
     top: 10px;
-    color: #fafafa;
+    color: #1c1b1b;
 }
 
 .post-link:hover,
@@ -197,14 +197,14 @@ nav .fa-solid {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 4rem;
     letter-spacing: 1px;
-    color: #fafafa;
+    color: #1c1b1b;
     margin-top: 20%;
     margin-left: 5%;
 }
 
 .post-subtitle {
     margin-left: 5%;
-    color: #fafafa;
+    color: #1c1b1b;
 }
 
 /* Alert messages */
