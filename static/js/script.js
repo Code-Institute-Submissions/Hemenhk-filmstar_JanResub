@@ -4,7 +4,7 @@ const message = document.getElementById('msg');
 
 // Function showing navbar menu for smaller screens 
 const showMenu = () => {
-    navLinks.style.right = '0';
+    navLinks.style.right = '0px';
 }
 
 // Function closing navbar menu for smaller screens 

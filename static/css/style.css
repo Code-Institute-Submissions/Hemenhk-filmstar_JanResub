@@ -16,6 +16,13 @@ body {
     text-align: center;
 }
 
+h1, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.links {
+    color: #e04c4c;
+}
 /* Logo */
 
 .nav-logo {
@@ -189,12 +196,33 @@ nav .fa-solid {
     align-items: center;
 }
 
+#contact-page {
+    text-align: center;
+    margin: 0 auto;
+    min-height: 70vh;
+    padding-top: 25px;
+}
+
+#sign-up, #log-out, #log-in {
+    background-color: #1c1b1b;
+    color: #fff;
+    border-radius: 15px;
+    width: 800px;
+    max-width: 80%;
+    padding: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
 /* Buttons  */
 
 .btn-signup {
-    background-color: #1c1b1b;
+    background-color: #e04c4c;
     color: #fafafa;
     border-radius: 5px;
+    border: none;
 }
 
 .btn-like {
