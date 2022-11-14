@@ -212,6 +212,7 @@ nav .fa-solid {
     padding: 25px;
     margin-top: 100px;
     margin-bottom: 100px;
+    min-height: 50vh;
 }
 
 
@@ -296,6 +297,10 @@ nav .fa-solid {
     overflow: hidden;
 }
 
+.masthead-image > image {
+    width: 100%;
+}
+
 .masthead-image:after {
     content: "";
     position: absolute;
@@ -343,19 +348,22 @@ nav .fa-solid {
 
 /* Footer */
 
-.footer {
+#footer {
     height: 150px;
+    color: #1c1b1b;
+    background-color: #cbcbcb;
 }
 
 .social-links>li {
     display: inline;
-    padding-left: 40px;
+    padding-left: 20px;
     font-size: 200%;
 }
 
 .social-links i {
-    padding-top: 50px;
+    padding-top: 20px;
     color: #1c1b1b;
+    margin: 0 2%;
 }
 
 .social-links i:hover {
@@ -373,6 +381,7 @@ nav .fa-solid {
     .nav-links ul li {
         display: block;
         color: #fff;
+        padding-top: 25px;
     }
 
     .nav-links {
@@ -395,7 +404,7 @@ nav .fa-solid {
         color: #fff;
         font-family: 'Bebas Neue', cursive;
         text-decoration: none;
-        font-size: 1.5rempx;
+        font-size: 2rem;
     }
 
     nav .fa-solid {
@@ -435,5 +444,14 @@ nav .fa-solid {
 
     #logo {
         font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .masthead {
+        height: 50vh;
+    }
+    .col-1 {
+        width: 20%;
     }
 }

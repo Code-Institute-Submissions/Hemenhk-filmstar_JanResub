@@ -11,3 +11,11 @@ const showMenu = () => {
 const hideMenu = () => {
     navLinks.style.right = '-200px';
 }
+
+// Function for closing alert messages
+const TimeOut = () => {
+    const alert = new bootstrap.Alert(message);
+    alert.close();
+};
+
+setTimeout(TimeOut, 3000);

@@ -95,8 +95,11 @@
                         class="fab fa-twitter"></i></a>
             </li>
         </ul>
+        <!-- Copyright Text -->
+        <div id="copy-right">
+            <p class="m-0 text-center text-black">&copy; Copyright Dessert Island 2021</p>
+        </div>
     </footer>
-
 
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/958d0d4858.js" crossorigin="anonymous"></script>
@@ -114,15 +117,6 @@
     <!-- Custom JS -->
     <script src="{% static 'js/script.js' %}"></script>
     <!-- Function closing alert messages -->
-    <script>
-        const TimeOut = () => {
-            const message = document.getElementById('msg');
-            const alert = new bootstrap.Alert(message);
-            alert.close();
-        };
-
-        setTimeout(TimeOut, 3000);
-    </script>
 </body>
 
 </html>
