@@ -384,3 +384,42 @@ The website was also tested on the following devices:
 * iPhone 12 and Pro
 * iPad Air
 * MacBook Pro
+
+
+### Automated Testing
+
+Testing was also completed by using Django TestCase. Test files can be found in blog > tests folder. The files tested are:
+
+* test_forms.py
+* test_models.py
+* test_urls.py
+* test_views.py
+
+
+During testing SQLite was used as a database. In the settings.py file the following code was written to toggle between SQLite and Heroku Postgres, when developing and deploying the website:
+
+* DEVELOPMENT = False
+
+if DEVELOPMENT:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+else:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+
+[Coverage](https://pypi.org/project/coverage/) was used during the testing phase to see how many functions of python code had been tested. In total 63% of code have been tested.
+
+
+### Known Issues and Fixes
+
+* Initially the home and about pages had background images, instead of a white background. This was changed due to the images not displaying after the project had been deployed to Heroku. There were no syntax errors that caused the error to happen. To solve this, I had to remove the images and replace the background with #FAFAFA instead. 
+
+* When testing the website, the Javascript code did not load properly, causing the navigation menu to not work on smaller screens. This was solved by loading the scripts at the very end of the body. 
+
+* During the build of this project my custom CSS would not load properly after each change. This caused unneccessary time delays, as it took a while to figure out the issue behind it. The solution was to clear cached images and files in Google Chrome. 
+
