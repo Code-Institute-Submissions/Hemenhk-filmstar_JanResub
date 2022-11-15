@@ -166,8 +166,8 @@ Due to time constraints a few features where not able to be created for this web
     * W3C was used to validate all the HTML code written in this project.
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/): 
     * W3C CSS validation was used to validate the CSS written in this project.
-* [JSHint Validation Service](https://jshint.com/): 
-    * The JSHint Validation Service was used to validate the JavaScript codes used on this project.
+* [Beautifytools](https://beautifytools.com/javascript-validator.php): 
+    * Beautifytools was used to validate the JavaScript code used on this project.
 * [PEP8 Online Validation Service](http://pep8online.com/): 
     * PEP8 was used to validate the python code for this project, by finding any erros and or bugs, which could then be adressed
 * [Cloudinary](https://cloudinary.com/): 
@@ -293,3 +293,45 @@ The user stories achieved on the admin panel is:
 
 * As a site admin I can create, read, update or delete posts so that easily manage my blog
 
+### Validation Testing
+
+To test the HTML code used, W3C Markup Validation Service was used.
+
+* Home, Post Detail and Base files: 
+
+![](static/media/html%20validator%201.png)
+
+* Contact Page 
+
+![](static/media/html%20val%202%20contact.png)
+
+* Contact Page 
+
+![](static/media/html%20val%203%20about.png)
+* About Page 
+
+![](static/media/html%20val%204%20logout.png)
+* Logout Page 
+
+![](static/media/html%20val%205%20signup.png)
+* Signup Page 
+
+![](static/media/html%206%20login.png)
+* Login Page 
+
+
+A common error found was a trailing space behind a "hr" tag. However, this issue was persistent even after resolved. Other than that, no concerning issues were found. 
+
+
+To test the CSS code used, W3C CSS Validation Service was used.
+
+No errors were found in the CSS file, as seen below.
+
+![](static/media/CSS%20validator.png)
+
+
+To test the JavaScript code, Beautifytools was used.
+
+No errors were found when testing the javascript code.
+
+![](static/media/JS%20beautifytools.png)
