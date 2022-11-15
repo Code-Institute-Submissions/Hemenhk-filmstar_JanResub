@@ -168,6 +168,8 @@ Due to time constraints a few features where not able to be created for this web
     * W3C CSS validation was used to validate the CSS written in this project.
 * [Beautifytools](https://beautifytools.com/javascript-validator.php): 
     * Beautifytools was used to validate the JavaScript code used on this project.
+* [Favicon.io](https://favicon.io/)
+    * Favicon.io was used to obtain the favicon.
 * [Cloudinary](https://cloudinary.com/): 
     * Cloudinary was used to store the media and static files of this project.
 * [Am I Responsive](http://ami.responsivedesign.is/):
@@ -440,4 +442,40 @@ The project was developed using GitPod and deployed via GitHub repository to Her
 11. In the "Resources" tab add "Heroku Postgres"
 13. Select the "Hobby Dev-Free".
 14. Select "Enable Automatic Deploys" and then select "Deploy Branch to deploy the project.
-15. After it has successfully deployed a 'view' button appears on screen and when clicked opens the deployed application.
+15. When the project has successfully deployed, a "view" option will become available to see the finished website. 
+
+
+## Credits
+
+### Content
+
+All reviews were obtained from [IMDB](https://www.imdb.com/?ref_=nv_home), and are real reviews posted by different users. 
+
+* Mad Max review was found on [IMDB](https://www.imdb.com/title/tt1392190/reviews?ref_=tt_urv)
+
+* Lord of the Rings review was found on [IMDB](https://www.imdb.com/title/tt0120737/reviews?ref_=tt_urv)
+
+* Rings of Power review was found on [IMDB](https://www.imdb.com/title/tt7631058/reviews?ref_=tt_urv)
+
+* Inglorious Basterds review was found on [IMDB](https://www.imdb.com/title/tt0361748/reviews?ref_=tt_urv)
+
+* Game of Thrones review was found on [IMDB](https://www.imdb.com/title/tt0944947/reviews?ref_=tt_urv)
+
+* Django Unchained review was found on [IMDB](https://www.imdb.com/title/tt1853728/reviews?ref_=tt_urv)
+
+* Gladiator review was found on [IMDB](https://www.imdb.com/title/tt0172495/reviews?ref_=tt_urv)
+
+* Peaky Blinders review was found on [IMDB](https://www.imdb.com/title/tt2442560/reviews?ref_=tt_urv)
+
+
+### Media 
+
+Images used on this project were obtained from the following sources:
+
+Post detail images:
+
+* All images were gotten from [Google](https://www.google.se/imghp?hl=sv&authuser=0&ogbl)
+
+Favicon:
+
+* [Favicon.io](https://favicon.io/)
