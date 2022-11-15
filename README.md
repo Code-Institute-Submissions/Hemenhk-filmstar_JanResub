@@ -27,7 +27,7 @@ Film Star is a website that means to provide the user with a set of reviews of b
     * [Current Features](#current-features)
     * [Future Features](#future-features)
 3. [Technologies Used](#tech-used)
-4. [Testing](#tech-used)
+4. [Testing](#testing)
     * [User Stories Testing](#user-stories-testing)
     * [Validation Testing](#val-testing)
     * [Automated Testing](#auto-testing)
