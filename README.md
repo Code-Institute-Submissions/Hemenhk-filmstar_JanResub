@@ -423,3 +423,21 @@ else:
 
 * During the build of this project my custom CSS would not load properly after each change. This caused unneccessary time delays, as it took a while to figure out the issue behind it. The solution was to clear cached images and files in Google Chrome. 
 
+## Deployment
+
+The project was developed using GitPod and deployed via GitHub repository to Herokuapp by following these steps:
+
+1. On the Heroku dashboard, click "New" in the top right-hand corner.
+2. Select "Create new app".
+3. Type in the app name and select the region (in my case it is Europe). 
+4. Click "Create app".
+5. Select "Settings" and then click on "BuildPacks". 
+6. Add "Python" and save changes.
+7. Go to "Config Vars" and add "KEY" and "Value" for DATABASE_URL, SECRET_KEY and CLOUDINARY_URL 
+8. Click on "Deploy" section at the top.
+9. Select Github as deployment method.
+10. Click on "Connect to GitHub" and then locate the repository name.
+11. In the "Resources" tab add "Heroku Postgres"
+13. Select the "Hobby Dev-Free".
+14. Select "Enable Automatic Deploys" and then select "Deploy Branch to deploy the project.
+15. After it has successfully deployed a 'view' button appears on screen and when clicked opens the deployed application.
