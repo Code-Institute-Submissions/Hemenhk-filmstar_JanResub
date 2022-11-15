@@ -4,7 +4,7 @@ from django.urls import reverse
 
 class TestViews(TestCase):
     """
-    This code was inspired by The Dumbfounds. 
+    This code was inspired by The Dumbfounds.
     Specific link can be followed in the readme
     """
     def setUp(self):

@@ -83,7 +83,6 @@ class PostLike(View):
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
-        
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
@@ -97,7 +96,7 @@ Note that the Contact code was borrowed from twilio.com's tutorial
 
 
 def contact(request):
-    """ 
+    """
     Display contact form and allow the user contact the admin
     """
     if request.method == 'POST':
