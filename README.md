@@ -11,18 +11,46 @@ Image is from [Am I Responsive](http://ami.responsivedesign.is/).
 
 Film Star is a website that means to provide the user with a set of reviews of both movies and TV-shows, so that the user can make a decision whether or not they wish to watch them. The user can like and comment on posts, as well as contact the admin with any questions or thoughts, by signing up for an account and log in. 
 
+## Table of Contents
 
-## User Experience (UX) 
+1. [User Experience (UX)](#ux)
+    * [Strategy](#strategy)
+        * [Project Goals](#strategy)
+        * [User Stories](#user-stories)
+    * [Scope](#scope)
+    * [Design](#design)
+        * [Colors](#colors)
+        * [Typography](#typography)
+    * [Skeleton](#skeleton)
+        * [Database](#database)
+2. [Features](#features)
+    * [Current Features](#current-features)
+    * [Future Features](#future-features)
+3. [Technologies Used](#tech-used)
+4. [Testing](#tech-used)
+    * [User Stories Testing](#user-stories-testing)
+    * [Validation Testing](#val-testing)
+    * [Automated Testing](#auto-testing)
+    * [Known Issues and Fixes](#bugs-and-fixes)
+5. [Deployment](#deployment)
+6. [Credits](#credits)
+    * [Content](#content)
+    * [Media](#media)
+    * [Code](#code)
 
-## Strategy 
 
-### Project Goals
+
+## User Experience (UX) <a name="ux"></a>
+
+## Strategy <a name="strategy"></a>
+
+### Project Goals <a name="project-goals"></a>
 
 The main purspose of Film Star is to provide the user with a set of reviews of films and TV-shows. The user can create an account to interact with posts and the admin, through liking and commenting, or by filling out the contact form.
 
 The target audience for this website is anyone that is interested in cinema. This is a broad audience, which can become even broader with a wider set of genres reviewed in the future. 
 
-### User Stories
+### User Stories <a name="user-stories"></a>
 
 * __Site User Goals:__
 
@@ -44,7 +72,7 @@ The target audience for this website is anyone that is interested in cinema. Thi
   * As a site admin I can create, read, update or delete posts so that easily manage my blog
 
 
-  ## Scope
+## Scope <a name="scope"></a>
 
 To achieve the strategy goals laid out, I have taken the following steps:
 
@@ -61,13 +89,13 @@ To achieve the strategy goals laid out, I have taken the following steps:
 * A CRUD functional admin page, to allow the admin to create, read, update and delete posts.
 
 
-## Design 
+## Design <a name="design"></a>
 
-### Colors 
+### Colors <a name="colors"></a>
 
 For the main body I chose to use #FAFAFA as a standard background color. It was specifically chosen as #FFF is too bright. #1C1B1B was used for the background color of the header and footer, as #000 is too strong. By using these contrasting colors, the user can clearly distinguish between the body and the header/footer, for easier usage. 
 
-### Typography 
+### Typography <a name="typography"></a>
 
 The fonts were sourced from [Google Fonts](https://fonts.google.com/).
 
@@ -78,9 +106,9 @@ For the main body text I used Noto Sans.
 I chose to not use extravagent fonts, as it wouldn't suit the purpose of the website. 
 
 
-## Skeleton
+## Skeleton <a name="skeleton"></a>
 
-### Database
+### Database <a name="database"></a>
 
 During the production of this website SQLite/Postgres was used as a main database. When the website was deployed, Heroku Postgres was used instead. 
 
@@ -92,9 +120,9 @@ The database contains four models, of which one is a custom model
 * __Contact__: Contains information regarding the contact form submitted by the user. 
 
 
-## Features
+## Features <a name="features"></a>
 
-### Current Features 
+### Current Features <a name="current-features"></a>
 
 For this project I chose to create a website with different pages, accessed by the navigation links in the header. Thisis fully responsive for desktops, tablets and phones. When reaching a phone screen, the navigation links turn into a hamburger menu, which is accessed on the right side of the screen, as I considered it to be more user friendly than the left side. 
 
@@ -122,7 +150,7 @@ __Features Exclusive to the Admin__:
 * The Admin is the only one capable of approving and deleting comments sumbitted by users.
 * The Admin is the only one capable of creating, updating and deleting posts.
 
-### Future Features
+### Future Features <a name="future-features"></a>
 
 Due to time constraints a few features where not able to be created for this website, and can be implemented in the future.
 
@@ -132,7 +160,7 @@ Due to time constraints a few features where not able to be created for this web
 
 * A search bar in the header, so that the user can easily look up any post they wish to view.
 
-## Technologies Used
+## Technologies Used <a name="tech-used"></a>
 
 * [Django](https://docs.djangoproject.com/en/3.1/): 
     * Django the main framework used in the making of this project.
@@ -176,12 +204,12 @@ Due to time constraints a few features where not able to be created for this web
     * Am I Responsive was used for showcasing the website at the top of this readme document.
 
 
-## Testing 
+## Testing <a name="testing"></a>
 
 Most of the tests done in this project where done manually.
 
 
-### User Stories Testing
+### User Stories Testing <a name="user-stories-testing"></a>
 
 From the home page, the user is presented with various different navigation links. These are the Logo, Home button, Contact button, About Us button, Login button, Sign up button and Logout button. Each of these links has the following effect once clicked: 
 
@@ -293,7 +321,7 @@ The user stories achieved on the admin panel is:
 
 * As a site admin I can create, read, update or delete posts so that easily manage my blog
 
-### Validation Testing
+### Validation Testing <a name="val-testing"></a>
 
 To test the HTML code used, W3C Markup Validation Service was used.
 
@@ -388,7 +416,7 @@ The website was also tested on the following devices:
 * MacBook Pro
 
 
-### Automated Testing
+### Automated Testing <a name="auto-testing"></a>
 
 Testing was also completed by using Django TestCase. Test files can be found in blog > tests folder. The files tested are:
 
@@ -417,15 +445,15 @@ else:
 [Coverage](https://pypi.org/project/coverage/) was used during the testing phase to see how many functions of python code had been tested. In total 63% of code have been tested.
 
 
-### Known Issues and Fixes
+### Known Issues and Fixes <a name="bugs-and-fixes"></a>
 
 * Initially the home and about pages had background images, instead of a white background. This was changed due to the images not displaying after the project had been deployed to Heroku. There were no syntax errors that caused the error to happen. To solve this, I had to remove the images and replace the background with #FAFAFA instead. 
 
 * When testing the website, the Javascript code did not load properly, causing the navigation menu to not work on smaller screens. This was solved by loading the scripts at the very end of the body. 
 
 * During the build of this project my custom CSS would not load properly after each change. This caused unneccessary time delays, as it took a while to figure out the issue behind it. The solution was to clear cached images and files in Google Chrome. 
-
-## Deployment
+ 
+## Deployment <a name="deployment"></a>
 
 The project was developed using GitPod and deployed via GitHub repository to Herokuapp by following these steps:
 
@@ -445,9 +473,9 @@ The project was developed using GitPod and deployed via GitHub repository to Her
 15. When the project has successfully deployed, a "view" option will become available to see the finished website. 
 
 
-## Credits
+## Credits <a name="credits"></a>
 
-### Content
+### Content <a name="content"></a>
 
 All reviews were obtained from [IMDB](https://www.imdb.com/?ref_=nv_home), and are real reviews posted by different users. 
 
@@ -468,7 +496,7 @@ All reviews were obtained from [IMDB](https://www.imdb.com/?ref_=nv_home), and a
 * Peaky Blinders review was found on [IMDB](https://www.imdb.com/title/tt2442560/reviews?ref_=tt_urv)
 
 
-### Media 
+### Media <a name="media"></a>
 
 Images used on this project were obtained from the following sources:
 
@@ -479,3 +507,14 @@ Post detail images:
 Favicon:
 
 * [Favicon.io](https://favicon.io/)
+
+
+### Code <a name="code"></a>
+
+* A large part of the code used on this project was used and inspired from Code Institute's "I think Therefore I Blog" tutorial, to build the skeleton base. Some of the borrowed code has been customised by me to fit this project. 
+
+* To build the contact form and pages, code was borrowed from [twilio](https://www.twilio.com/blog/build-contact-form-python-django-twilio-sendgrid) to assist in the project. 
+
+* [Bootstrap](https://getbootstrap.com/) was used to help build the overall responsiveness of this project. 
+
+* To assist with the testing phase of this project, [The-Dumbfounds](https://www.youtube.com/watch?v=qwypH3YvMKc&list=PLbpAWbHbi5rMF2j5n6imm0enrSD9eQUaM&index=2) and Code Institute's "Hello Django" tutorials were utilised. 
