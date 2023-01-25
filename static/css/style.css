@@ -7,6 +7,22 @@ h1, h3 {
     font-family: 'Bebas Neue', sans-serif;
 }
 
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.hr {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.name {
+    color: #e04c4c;
+    text-decoration: underline;
+}
+
 .links {
     color: #e04c4c;
 }
@@ -136,9 +152,10 @@ nav .fa-solid {
 }
 
 .author {
-    color: #1c1b1b;
+    color: #fafafa;
     font-family: 'Bebas Neue';
-    letter-spacing: 0.5px;
+    font-size: x-large;
+    letter-spacing: 1px;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -194,7 +211,8 @@ nav .fa-solid {
 .page-link {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
-    color: #e04c4c;
+    color: #fafafa;
+    background-color: #e04c4c;
     border-radius: 8px;
 }
 
