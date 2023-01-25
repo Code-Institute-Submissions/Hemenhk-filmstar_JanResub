@@ -310,12 +310,29 @@ nav .fa-solid {
     color: #fff;
     border-radius: 15px;
     width: 800px;
-    max-width: 80%;
+    max-width: 80vh;
     padding: 25px;
     margin-top: 100px;
     margin-bottom: 100px;
-    min-height: 70vh;
+    min-height: 50vh;
 }
+
+@media screen and (max-width: 600px) {
+    #sign-up, #log-out, #log-in {
+        max-width: 75%;
+        margin-bottom: 50px;
+            
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #sign-up, #log-out, #log-in {
+        max-width: 75%;
+        margin-top: 25px;
+            
+    }
+}
+
 
 
 /* Buttons  */
@@ -353,9 +370,10 @@ nav .fa-solid {
 
 #footer {
     height: 150px;
+    width: 100%;
     color: #fafafa;
     background-color: #1c1b1b;
-}
+s}
 
 .social-links>li {
     display: inline;
@@ -449,7 +467,9 @@ nav .fa-solid {
     }
 }
 
-@media screen and (max-width: 375px) {
+
+
+@media screen and (max-width: 320px) {
     .masthead {
         height: 50vh;
     }

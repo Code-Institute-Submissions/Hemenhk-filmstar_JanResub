@@ -103,7 +103,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'filmstar.wsgi.application'
 
 
-DEVELOPMENT = False
+DEVELOPMENT = True
 
 if DEVELOPMENT:
     DATABASES = {
