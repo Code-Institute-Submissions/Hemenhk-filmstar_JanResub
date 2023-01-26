@@ -338,18 +338,24 @@ small a {
     padding-top: 25px;
 }
 
-#sign-up, #log-out, #log-in, #edit-post {
+
+#sign-up, #log-out, #log-in, #add-edit-post {
     background-color: #1c1b1b;
     color: #fff;
     border-radius: 15px;
     width: 800px;
-    max-width: 80vh;
+    max-width: 80%;
     padding: 25px;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
     min-height: 50vh;
 }
+
+#add-edit-post {
+    width: 1000px;
+}
+
 
 @media screen and (max-width: 600px) {
     #sign-up, #log-out, #log-in {
