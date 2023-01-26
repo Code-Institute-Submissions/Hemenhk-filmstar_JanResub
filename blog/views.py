@@ -1,9 +1,10 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from django.views import generic, View
 from .models import Post
-from .forms import ContactForm, CommentForm
+from .forms import ContactForm, CommentForm, PostForm
 
 
 """
@@ -143,7 +144,7 @@ def add_post(request):
 
 
 @login_required
-def edit_post(request, slug, *args, **kwargs):
+def post_edit(request, slug, *args, **kwargs):
     """ Edit a post """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only admin can do that.')
@@ -166,7 +167,7 @@ def edit_post(request, slug, *args, **kwargs):
         form = PostForm(instance=post)
         messages.info(request, f'You are editing {post.title}')
 
-    template = 'edit_post.html'
+    template = 'post_edit.html'
     context = {
         'form': form,
         'post': post,

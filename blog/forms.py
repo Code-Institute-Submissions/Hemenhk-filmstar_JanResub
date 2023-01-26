@@ -1,5 +1,15 @@
-from .models import Comment, Contact
+from .models import Comment, Contact, Post
 from django import forms
+from django_summernote.widgets import SummernoteWidget
+
+
+class PostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        exclude = ('likes',)
+        widgets = {
+            'content': SummernoteWidget(),
+        }
 
 
 class CommentForm(forms.ModelForm):
