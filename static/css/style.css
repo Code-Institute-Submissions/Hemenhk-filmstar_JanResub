@@ -138,6 +138,10 @@ nav .fa-solid {
     background-color: transparent;
 }
 
+.card-title:hover {
+    color: #e04c4c;
+}
+
 .image-container {
     position: relative;
 
@@ -196,6 +200,17 @@ nav .fa-solid {
     -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
+}
+
+small {
+    padding-left: 1rem;
+}
+
+small a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .post-link {
@@ -323,7 +338,7 @@ nav .fa-solid {
     padding-top: 25px;
 }
 
-#sign-up, #log-out, #log-in {
+#sign-up, #log-out, #log-in, #edit-post {
     background-color: #1c1b1b;
     color: #fff;
     border-radius: 15px;

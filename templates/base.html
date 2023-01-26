@@ -45,9 +45,11 @@
                     <li><a href="{% url 'about' %}">ABOUT US</a></li>
 
                     {% if user.is_authenticated %}
+                    {% if request.user.is_superuser %}
                     <li class="nav-item">
                         <a href="{% url 'add_post' %}">ADD POST</a>
                     </li>
+                    {% endif %}
                     <li class="nav-item">
                         <a href="{% url 'account_logout' %}">LOGOUT</a>
                     </li>ß

@@ -9,7 +9,8 @@ from .forms import ContactForm, CommentForm, PostForm
 
 """
 Note that code was used here from Code Institute's "I think therefore I blog
-project" tutorial to help create this project
+project" tutorial to help create this project, as well as from Meldissa's
+'Dessert Island' project.
 """
 
 
