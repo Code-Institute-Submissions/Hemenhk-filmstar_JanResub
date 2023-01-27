@@ -27,6 +27,11 @@ h2 {
     color: #e04c4c;
 }
 
+.error-link {
+    color: #e04c4c;
+    text-decoration: underline;
+}
+
 /* Home page styles */
 
 .home-wrapper {

@@ -159,6 +159,9 @@ __Navigation__:
 
 * The navigation feature is present on all pages of this website, and is fixed to the top of the screen. 
 * The logo is on the left-hand side, whilst the links are on the right. All links and the logo have a hover effect, whereby a line expands below the links, indicating where the mouse is hovered. This gives the website a much better aesthetic.
+* If the user enters an invalid url, they are shown an error 404 page not found, as seen below:
+
+![Page Not Found](static/media/404.png)
 
 __Footer__:
 
