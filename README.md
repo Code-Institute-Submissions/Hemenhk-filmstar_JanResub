@@ -239,9 +239,6 @@ Due to time constraints a few features where not able to be created for this web
 
 ## Testing <a name="testing"></a>
 
-The testing documentation for this project can be found [here](https://github.com/Hemenhk/locations-api/blob/main/TESTING.md)
-
-
 
 ### User Stories Testing <a name="user-stories-testing"></a>
 
