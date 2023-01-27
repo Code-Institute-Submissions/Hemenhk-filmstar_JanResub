@@ -71,6 +71,33 @@ The target audience for this website is anyone that is interested in cinema. Thi
 
   * As a site admin I can create, read, update or delete posts so that easily manage my blog
 
+  #### User Story Progress
+
+  **Start**
+
+![User Stories Progress -- Start](static/media/first%20sprint.png)
+
+**Step 2**
+
+![User Stories Progress -- Step 2](static/media/sprint%202.png)
+
+**Step 3**
+
+![User Stories Progress -- Step 3](static/media/sprint%203.png)
+
+**Step 4**
+
+![User Stories Progress -- Step 4](static/media/sprint%204.png)
+
+**Step 5**
+
+![User Stories Progress -- Step 5](static/media/sprint%205.png)
+
+**Step 6**
+
+![User Stories Progress -- Step 6](static/media/final%20sprint.png)
+
+
 
 ## Scope <a name="scope"></a>
 
@@ -150,6 +177,9 @@ __Features Exclusive to the Admin__:
 * The Admin is the only one capable of approving and deleting comments sumbitted by users.
 * The Admin is the only one capable of creating, updating and deleting posts.
 
+![Add Post Page - Front End](static/media/add%20post.png)
+![Edit Post Page - Front End](static/media/edit%20post.png)
+
 ### Future Features <a name="future-features"></a>
 
 Due to time constraints a few features where not able to be created for this website, and can be implemented in the future.
@@ -206,7 +236,8 @@ Due to time constraints a few features where not able to be created for this web
 
 ## Testing <a name="testing"></a>
 
-Most of the tests done in this project where done manually.
+The testing documentation for this project can be found [here](https://github.com/Hemenhk/locations-api/blob/main/TESTING.md)
+
 
 
 ### User Stories Testing <a name="user-stories-testing"></a>
