@@ -159,7 +159,7 @@ __Navigation__:
 
 * The navigation feature is present on all pages of this website, and is fixed to the top of the screen. 
 * The logo is on the left-hand side, whilst the links are on the right. All links and the logo have a hover effect, whereby a line expands below the links, indicating where the mouse is hovered. This gives the website a much better aesthetic.
-* If the user enters an invalid url, they are shown an error 404 page not found, as seen below:
+* If the user enters an invalid url, they are shown an error 404 page not found, as seen below. By clicking "here" they are redirected to the home page.
 
 ![Page Not Found](static/media/404.png)
 
@@ -546,6 +546,8 @@ Favicon:
 ### Code <a name="code"></a>
 
 * A large part of the code used on this project was used and inspired from Code Institute's "I think Therefore I Blog" tutorial, to build the skeleton base. Some of the borrowed code has been customised by me to fit this project. 
+
+* The code to build the front end CRUD functionality in this project was borrowed from Meldissa's 'Dessert Island' project. 
 
 * To build the contact form and pages, code was borrowed from [twilio](https://www.twilio.com/blog/build-contact-form-python-django-twilio-sendgrid) to assist in the project. 
 
